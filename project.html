@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online.Shop App</title>
+    <style>
+        body {
+            background: linear-gradient(grey);
+        }
+        h1{
+            text-align: center;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 0;
+        
+        }
+        h2 {
+            text-align: center;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            margin-top: 0;
+            
+
+        }
+        img {
+            width: 40%;
+            display: block;
+            margin: auto;
+        }
+        div {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            color: brown;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 50;
+            background: fixed;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid black;
+            background: lightgreen;
+            color: black;
+            font-size: 11px;
+            line-height: 18px;
+            padding: 4px 6px;
+            border-radius: 20px;
+            transition: all 200ms ease;
+            box-shadow: rgba(37, 39, 89, 0.08);
+            cursor: pointer;
+        }
+        button:hover {
+            background: white;
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Welcome to our Online shopping page.
+    </h1>
+    <h2>
+       <em>
+        where  we offer the best online service...
+       </em>
+    </h2>
+    <img src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/384/original/online-1617947180.jpg?1707382199" width="300"/>
+    <br>
+    <p>
+    <div>
+      <strong>Online shopping</strong> has become increasingly popular over the last decade, and it is easy to see why. Shopping from home saves users time and effort by avoiding long lines or crowded stores. At the same time, shoppers can take advantage of a vast array of online products at any given time. From clothing to electronics, virtually endless choices are available for purchase with just a few clicks of the mouse.  
+    </div>
+    </p>
+    <hr>
+    <p>
+        <span>
+            Should you enquire about anything, you can use the email below:
+        </span>
+    </p>
+    <p>
+        <a href="fenyaneandile@gmail.com">
+            fenyaneandile@gmail.com
+        </a>
+    </p>
+    <p>
+        NEW HERE?
+    </p>
+    <P>
+        Here is a 50% off upon SIGN UP
+    </P>
+    <button>
+        <strong>
+            SIGN UP
+        </strong>
+    </button>
+    <script>
+        function sign() {
+        let fullName = prompt ("What is your full name?");
+        let email = prompt ("What is your email address?");
+        let age = prompt ("How old are you?");
+        let heading = document.querySelector("h1");
+
+        if (age >= 18){
+            heading.innerHTML = "Thank you " + fullName + " for signing up with us."
+        } else {
+            heading.innerHTML = "Due to under age, we cannot continue with you"
+        }
+    }
+        
+        let signUpButton = document.querySelector("button");
+
+        signUpButton.addEventListener("click", sign);
+    </script>
+</body>
+</html>
